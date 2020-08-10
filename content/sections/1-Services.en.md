@@ -5,7 +5,7 @@ subheader: "We aim to provide valuable insights into user's data."
 services: [
   {
     iconName: "ShoppingCartIcon",
-    header: "Data collection with smart devices",
+    header: "Data collection",
     content: "Our application collects data related to user's sleeping habits, concentration patterns, outdoor activties, etc. through an individual's smart phone / smart device usage. "
   },
   {
@@ -15,7 +15,7 @@ services: [
   },
   {
     iconName: "LockIcon",
-    header: "Accurate data provision & communication",
+    header: "Accurate data provision",
     content: "With this data, we intend to aid mental health practitioners and people diagnosed with depression. With our solution, we promote more accurate and healthier information transfer between doctors and their patients."
   }
 ]
