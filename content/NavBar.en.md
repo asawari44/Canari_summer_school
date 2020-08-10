@@ -1,4 +1,4 @@
 ---
-brand: "Caneri"
+brand: "Canari"
 menuText: "Menu "
 ---
