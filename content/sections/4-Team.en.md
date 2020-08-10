@@ -1,13 +1,13 @@
 ---
 anchor: "Team"
-header: "Our Amazing Team"
-subheader: "Lorem ipsum dolor sit amet consectetur."
-content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
+header: "Team behind the idea..."
+subheader: "A multicultural team with varied backgrounds and versatile experiences"
+content: "We are a team of enthusiasts with an immense passion for technology and the healthcare industry. "
 teamMember: [
   {
     imageFileName: "team/1.jpg",
-    header: "Kay Garland",
-    subheader: "Lead Designer",
+    header: "Brendan Hanke",
+    subheader: "UX Specialist / CEO",
     social: {
       twitter: "#",
       facebook: "#",
@@ -16,8 +16,8 @@ teamMember: [
   },
   {
     imageFileName: "team/2.jpg",
-    header: "Larry Parker",
-    subheader: "Lead Marketer",
+    header: "Asawari Joshi",
+    subheader: "Cloud Engineer / Lead Designer",
     social: {
       twitter: "#",
       facebook: "#",
@@ -26,13 +26,33 @@ teamMember: [
   },
   {
     imageFileName: "team/3.jpg",
-    header: "Diana Pertersen",
-    subheader: "Lead Developer",
+    header: "Serhii Korzh",
+    subheader: "CFO / Data Scientist",
+    social: {
+      twitter: "#",
+      facebook: "#",
+      medium: "#"
+    }
+  },{
+    imageFileName: "team/3.jpg",
+    header: "Robin De Groot",
+    subheader: "Head of marketing / Data Scientist",
     social: {
       twitter: "#",
       facebook: "#",
       medium: "#"
     }
   },
+  {
+    imageFileName: "team/3.jpg",
+    header: "Matyas Kamaromi",
+    subheader: "Product owner / Data Scientist",
+    social: {
+      twitter: "#",
+      facebook: "#",
+      medium: "#"
+    }
+  },
+
 ]
 ---
