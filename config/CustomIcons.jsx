@@ -1,6 +1,6 @@
 import makeFAIcon from "utils/makeFAIcon";
 
-import { faShoppingCart, faLaptop, faLock } from "@fortawesome/free-solid-svg-icons";
+import { faLaptop, faCloud, faHandshake } from "@fortawesome/free-solid-svg-icons";
 
 export const ShoppingCartIcon = makeFAIcon(faShoppingCart);
 export const LaptopIcon = makeFAIcon(faLaptop);

@@ -1,22 +1,22 @@
 ---
 anchor: "Services"
 header: "Services"
-subheader: "Lorem ipsum dolor sit amet consectetur."
+subheader: "We aim to provide valuable insights into user's data."
 services: [
   {
-    iconName: "ShoppingCartIcon",
-    header: "E-Commerce",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    iconName: "devices",
+    header: "Data collection with smart devices",
+    content: "Our application collects data related to user's sleeping habits, concentration patterns, outdoor activties, etc. through an individual's smart phone / smart device usage. "
   },
   {
-    iconName: "LaptopIcon",
-    header: "Responsive Design",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    iconName: "ml",
+    header: "Data processing with AI",
+    content: "With the collected data, machine learning algorithms find patterns and predict user's mood."
   },
   {
-    iconName: "LockIcon",
-    header: "Web Security",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    iconName: "communication",
+    header: "Accurate data provision & communication",
+    content: "With this data, we intend to aid mental health practitioners and people diagnosed with depression. With our solution, we promote more accurate and healthier information transfer between doctors and their patients."
   }
 ]
 ---
