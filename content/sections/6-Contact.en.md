@@ -1,7 +1,7 @@
 ---
 anchor: "Contact"
 header: "Let's Get In Touch!"
-subheader: "Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!"
-telephone: 03-0000-0001
-email: contact@yourwebsite.com
+subheader: "Would you like to share some thoughts on our solution or partner with us in this venture?"
+telephone: +358 417269091
+email: brndnhanke@gmail.com
 ---
