@@ -45,7 +45,7 @@ const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
       expanded={expanded}
     >
       <Container>
-        <Col lg={4} md={3} sm={6} xs={6} className='my-3'>
+        <Col lg={2} md={3} sm={4} xs={4} className='my-3'>
           <Image
             className='img-fluid d-block'
             fileName={imageFileName}
