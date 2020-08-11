@@ -14,7 +14,7 @@
       height: 100%;
       transition: all ease 0.5s;
       opacity: 0;
-      background: fade-out($primary, 0.1);
+      background: fade-out($primary, 0.3);
       &:hover {
         opacity: 1;
       }
