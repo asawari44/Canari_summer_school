@@ -1,18 +1,9 @@
 module.exports = {
-  title: "Gatsyby Startbootstrap Agency",
-  keywords: [
-    "gatsby",
-    "gatsbyjs",
-    "landing page",
-    "landing",
-    "i18n",
-    "eslint",
-    "bootstrap",
-    "startbootstrap-agency",
-  ],
-  description: "gatsby version of startbootstrap-agency with i18n support.",
-  author: "thundermiracle",
-  trackingId: "UA-119418003-5",
+  title: "Canari",
+  keywords: ["mental health", "wellness", "wellbeing", "monitoring", "depression", "MDD", "PDD"],
+  description: "We help people with depressive disorders track their mental wellbeing",
+  author: "Team Canari",
+  // trackingId: "",
   defaultLang: "en",
   langTextMap: {
     en: "English",

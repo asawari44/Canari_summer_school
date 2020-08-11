@@ -110,7 +110,7 @@ const IndexPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } })
     },
     allMarkdownRemark: { nodes },
   } = data;
-
+  console.log(data);
   const { topNode, navBarNode, anchors, footerNode, sectionsNodes } = breakDownAllNodes(nodes);
 
   let langSelectorPart;
@@ -120,30 +120,30 @@ const IndexPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } })
     );
   }
 
+  console.log(navBarNode.frontmatter);
+
   return (
     <>
-      <SEO lang={langKey} title="Top" keywords={keywords} description={description} />
+      <SEO lang={langKey} title='Top' keywords={keywords} description={description} />
       <Navbar
         anchors={anchors}
         frontmatter={navBarNode.frontmatter}
         extraItems={langSelectorPart}
       />
       <Top frontmatter={topNode.frontmatter} />
-      {
-        // dynamically import sections
-        sectionsNodes.map(({ frontmatter, fields: { fileName } }, ind) => {
-          const sectionComponentName = fileNameToSectionName(fileName);
-          const SectionComponent = Sections[sectionComponentName];
+      {// dynamically import sections
+      sectionsNodes.map(({ frontmatter, fields: { fileName } }, ind) => {
+        const sectionComponentName = fileNameToSectionName(fileName);
+        const SectionComponent = Sections[sectionComponentName];
 
-          return SectionComponent ? (
-            <SectionComponent
-              key={sectionComponentName}
-              className={ind % 2 === 1 ? "bg-light" : null}
-              frontmatter={frontmatter}
-            />
-          ) : null;
-        })
-      }
+        return SectionComponent ? (
+          <SectionComponent
+            key={sectionComponentName}
+            className={ind % 2 === 1 ? "bg-light" : null}
+            frontmatter={frontmatter}
+          />
+        ) : null;
+      })}
       <Footer frontmatter={footerNode.frontmatter} />
     </>
   );

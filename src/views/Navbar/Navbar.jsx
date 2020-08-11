@@ -3,17 +3,18 @@ import PropTypes from "prop-types";
 
 import clsx from "clsx";
 
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Container, Nav, Col } from "react-bootstrap";
 
 import useWindowOnScroll from "hooks/useWindowOnScroll";
 import useSmoothScrollTo from "hooks/useSmoothScrollTo";
 import Icon from "components/Icon";
+import Image from "components/Image";
 import NavItem from "components/NavItem";
 
 import "./Navbar.scss";
 
 const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
-  const { brand, menuText } = frontmatter;
+  const { brand, imageFileName, menuText } = frontmatter;
 
   const handleScrollToTop = useSmoothScrollTo(0);
 
@@ -39,21 +40,27 @@ const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
   return (
     <Navbar
       className={clsx("navbar-root", { "navbar-shrink": shrink })}
-      expand="lg"
-      fixed="top"
+      expand='lg'
+      fixed='top'
       expanded={expanded}
     >
       <Container>
-        <Navbar.Brand className="cursor-pointer" onClick={handleBrandClick}>
-          {brand}
-        </Navbar.Brand>
-        <Navbar.Toggle onClick={toggleMenu} aria-label="Toggle navigation">
+        <Col lg={4} md={3} sm={6} xs={6} className='my-3'>
+          <Image
+            className='img-fluid d-block'
+            fileName={imageFileName}
+            alt={brand}
+            onClick={handleBrandClick}
+            size
+          />
+        </Col>
+        <Navbar.Toggle onClick={toggleMenu} aria-label='Toggle navigation'>
           {menuText}
-          <Icon iconName="BarsIcon" />
+          <Icon iconName='BarsIcon' />
         </Navbar.Toggle>
         <Navbar.Collapse>
-          <Nav className="text-uppercase ml-auto">
-            {anchors.map((anchor) => (
+          <Nav className='text-uppercase ml-auto'>
+            {anchors.map(anchor => (
               <NavItem key={anchor} to={anchor} onClick={closeMenu} />
             ))}
           </Nav>

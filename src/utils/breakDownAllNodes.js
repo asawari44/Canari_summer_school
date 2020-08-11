@@ -5,7 +5,7 @@ const propFilter = curry((pathList, regex) => pathSatisfies(test(regex), pathLis
 /**
  * break down all data retrieved in index.js
  */
-export default function breakDownAllNodes(nodes) {
+export default function breakDownAllNodes (nodes) {
   const filterByFileName = propFilter(["fields", "fileName"]);
   const filterByDirectoryName = propFilter(["fields", "directoryName"]);
 
@@ -13,6 +13,7 @@ export default function breakDownAllNodes(nodes) {
   const topNode = nodes.find(filterByFileName(/top/i)) || {};
   // navbar
   const navBarNode = nodes.find(filterByFileName(/navbar/i)) || {};
+  console.log(navBarNode);
   // footer
   const footerNode = nodes.find(filterByFileName(/footer/i)) || {};
 
