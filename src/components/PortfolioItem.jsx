@@ -18,7 +18,7 @@ const PortfolioItem = ({
 }) => {
   return (
     <>
-      <Col md={4} sm={6} className='portfolio-item'>
+      <Col md={6} sm={6} className='portfolio-item'>
         <a href='http://www.arngren.net/' className='portfolio-link'>
           <Image
             className='img-fluid'
