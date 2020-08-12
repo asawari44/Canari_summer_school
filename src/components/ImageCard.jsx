@@ -6,15 +6,30 @@ import { Container, Card } from "react-bootstrap";
 import Image from "components/Image";
 import "./ImageCard.scss";
 
-const ImageCard = ({ className, imageFileName, imageAlt, header, subheader, extraInfo }) => {
+const ImageCard = ({
+  className,
+  imageFileName,
+  imageAlt,
+  header,
+  subheader,
+  logoFileName,
+  extraInfo,
+}) => {
   return (
-    <Card className={clsx("image-card bg-dark text-white text-center", className)}>
+    <Card className={clsx("image-card bg-dark text-center", className)}>
       <Image className='image' fileName={imageFileName} alt={imageAlt || header || subheader} />
       <Card.ImgOverlay className='no-padding'>
         <Container>
           <div className='intro-text'>
+            <div className='intro-row'>
+              <Image
+                className='intro-logo'
+                fileName={logoFileName}
+                alt={imageAlt || header || subheader}
+              />
+              <div className='intro-heading'>{header}</div>
+            </div>
             <div className='intro-lead-in'>{subheader}</div>
-            <div className='intro-heading'>{header}</div>
             {extraInfo}
           </div>
         </Container>
@@ -30,6 +45,7 @@ ImageCard.propTypes = {
   header: PropTypes.string,
   subheader: PropTypes.string,
   extraInfo: PropTypes.any,
+  logoFileName: PropTypes.string,
 };
 
 ImageCard.defaultProps = {
@@ -38,6 +54,7 @@ ImageCard.defaultProps = {
   imageAlt: null,
   header: "",
   subheader: "",
+  logoFileName: "",
   extraInfo: null,
 };
 

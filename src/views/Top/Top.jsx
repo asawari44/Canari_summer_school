@@ -9,15 +9,16 @@ const Top = ({ frontmatter }) => {
   if (!frontmatter) {
     return null;
   }
+  console.log(frontmatter);
 
-  const { header, subheader, imageFileName, jumpToAnchor, jumpToAnchorText } = frontmatter;
+  const { header, subheader, imageFileName, brand, jumpToAnchor, jumpToAnchorText } = frontmatter;
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const scrollToSection = useSmoothScrollTo(jumpToAnchor);
 
   let extraInfoPart;
   if (jumpToAnchor && jumpToAnchorText) {
     extraInfoPart = (
-      <Button size="xl" variant="primary" className="text-uppercase" onClick={scrollToSection}>
+      <Button size='xl' variant='primary' className='text-uppercase' onClick={scrollToSection}>
         {jumpToAnchorText}
       </Button>
     );
@@ -27,6 +28,7 @@ const Top = ({ frontmatter }) => {
     <ImageCard
       imageFileName={imageFileName}
       header={header}
+      logoFileName={brand}
       subheader={subheader}
       extraInfo={extraInfoPart}
     />

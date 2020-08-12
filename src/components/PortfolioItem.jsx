@@ -11,6 +11,7 @@ const PortfolioItem = ({
   imageAlt,
   header,
   subheader,
+  url,
   content,
   imageFileNameDetail,
   imageAltDetail,
@@ -19,7 +20,7 @@ const PortfolioItem = ({
   return (
     <>
       <Col md={6} sm={6} className='portfolio-item'>
-        <a href='http://www.arngren.net/' className='portfolio-link'>
+        <a href={url} className='portfolio-link'>
           <Image
             className='img-fluid'
             fileName={imageFileName}
@@ -44,6 +45,7 @@ PortfolioItem.propTypes = {
   content: PropTypes.string,
   imageFileNameDetail: PropTypes.string,
   imageAltDetail: PropTypes.string,
+  url: PropTypes.string,
   extraInfo: PropTypes.any,
 };
 
@@ -53,6 +55,7 @@ PortfolioItem.defaultProps = {
   content: "",
   imageFileNameDetail: "",
   imageAltDetail: "",
+  url: "",
   extraInfo: null,
 };
 
