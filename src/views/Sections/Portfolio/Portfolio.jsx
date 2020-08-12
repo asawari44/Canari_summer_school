@@ -14,32 +14,23 @@ const Portfolio = ({ className, frontmatter }) => {
   }
 
   const { anchor, header: rootHeader, subheader: rootSubHeader, portfolios } = frontmatter;
-
+  console.log(portfolios);
   return (
     <PageSection className={clsx("portfolio-section", className)} id={anchor}>
       <Row>
         <SectionHeader header={rootHeader} subheader={rootSubHeader} />
       </Row>
       <Row>
-        {portfolios.map(
-          ({ content, extraInfo, header, imageFileName, imageFileNameDetail, subheader }) => (
-            <PortfolioItem
-              key={header}
-              imageFileName={imageFileName}
-              header={header}
-              subheader={subheader}
-              content={content}
-              imageFileNameDetail={imageFileNameDetail}
-              extraInfo={
-                <ul>
-                  {extraInfo.map((ei) => (
-                    <li key={ei}>{ei}</li>
-                  ))}
-                </ul>
-              }
-            />
-          ),
-        )}
+        {portfolios.map(({ content, header, imageFileName, imageFileNameDetail, subheader }) => (
+          <PortfolioItem
+            key={header}
+            imageFileName={imageFileName}
+            header={header}
+            subheader={subheader}
+            url={content}
+            imageFileNameDetail={imageFileNameDetail}
+          />
+        ))}
       </Row>
     </PageSection>
   );
