@@ -20,7 +20,7 @@ const PortfolioItem = ({
   return (
     <>
       <Col md={6} sm={6} className='portfolio-item'>
-        <a href={url} className='portfolio-link'>
+        <a href={url} target='_blank' rel='noopener noreferrer' className='portfolio-link'>
           <Image
             className='img-fluid'
             fileName={imageFileName}

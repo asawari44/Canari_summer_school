@@ -9,47 +9,31 @@ teamMember:
       imageFileName: "team/1.jpg",
       header: "Brendan Hanke",
       subheader: "UX Specialist / CEO",
-      social:
-        {
-          github: "https://github.com/brendanhanke",
-          linkedin: "https://www.linkedin.com/in/hankebrendan/",
-        },
+      social: { github: "brendanhanke", linkedin: "hankebrendan" },
     },
     {
       imageFileName: "team/2.jpg",
       header: "Asawari Joshi",
       subheader: "Lead Designer / Cloud Engineer",
-      social: { github: "https://github.com/asawari44", linkedin: "#" },
+      social: { github: "asawari44", linkedin: "asawarijoshi" },
     },
     {
       imageFileName: "team/3.jpg",
       header: "Serge Korzh",
       subheader: "CFO / Machine Learning engineer",
-      social:
-        {
-          github: "https://github.com/souserge",
-          linkedin: "https://www.linkedin.com/in/serge-korzh/",
-        },
+      social: { github: "souserge", linkedin: "serge-korzh" },
     },
     {
       imageFileName: "team/4.jpg",
       header: "Robin De Groot",
       subheader: "Head of marketing / Data Scientist",
-      social:
-        {
-          github: "https://github.com/RobindeGrootNL",
-          linkedin: "https://www.linkedin.com/in/robindegroot-1998",
-        },
+      social: { github: "RobindeGrootNL", linkedin: "robindegroot-1998" },
     },
     {
       imageFileName: "team/5.jpg",
       header: "Mátyás Komáromi",
       subheader: "Product owner / Software engineer",
-      social:
-        {
-          github: "#",
-          linkedin: "https://www.linkedin.com/in/m%C3%A1ty%C3%A1s-kom%C3%A1romi-77a3bb17a/",
-        },
+      social: { github: "Frontier789", linkedin: "m%C3%A1ty%C3%A1s-kom%C3%A1romi-77a3bb17a" },
     },
   ]
 ---

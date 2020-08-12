@@ -16,7 +16,7 @@ portfolios:
       imageFileNameDetail: "portfolio/02-full.png",
       header: "Practitioner desktop app",
       subheader: "a Figma mock-up",
-      content: "https://www.figma.com/proto/Z44G5NN9iq7BUPUWAsXhM7/CanariApp?node-id=155%3A270&scaling=contain",
+      content: "https://www.figma.com/proto/Z44G5NN9iq7BUPUWAsXhM7/CanariApp?node-id=76%3A2&scaling=contain",
     },
   ]
 ---
