@@ -4,7 +4,6 @@ import { graphql } from "gatsby";
 
 import Navbar from "views/Navbar";
 import Top from "views/Top";
-import Footer from "views/Footer";
 import * as Sections from "views/Sections";
 import SEO from "components/SEO";
 import LanguageSelector from "components/LanguageSelector";
@@ -111,7 +110,7 @@ const IndexPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } })
     allMarkdownRemark: { nodes },
   } = data;
   console.log(data);
-  const { topNode, navBarNode, anchors, footerNode, sectionsNodes } = breakDownAllNodes(nodes);
+  const { topNode, navBarNode, anchors, sectionsNodes } = breakDownAllNodes(nodes);
 
   let langSelectorPart;
   if (langTextMap != null && Object.keys(langTextMap).length > 1) {
@@ -120,11 +119,14 @@ const IndexPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } })
     );
   }
 
-  console.log(navBarNode.frontmatter);
-
   return (
     <>
-      <SEO lang={langKey} title='Top' keywords={keywords} description={description} />
+      <SEO
+        lang={langKey}
+        title='Your digital companion in mental health'
+        keywords={keywords}
+        description={description}
+      />
       <Navbar
         anchors={anchors}
         frontmatter={navBarNode.frontmatter}
@@ -144,7 +146,6 @@ const IndexPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } })
           />
         ) : null;
       })}
-      <Footer frontmatter={footerNode.frontmatter} />
     </>
   );
 };

@@ -1,6 +1,6 @@
 ---
-header: "Suggest some title here"
-subheader: "An innovative technology solution for a better mental health!"
+header: "Your digital companion in mental health"
+subheader: "meet Canari."
 imageFileName: "header-bg.jpg"
 jumpToAnchor: "Services"
 jumpToAnchorText: "Tell Me More"

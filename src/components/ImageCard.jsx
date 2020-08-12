@@ -9,12 +9,12 @@ import "./ImageCard.scss";
 const ImageCard = ({ className, imageFileName, imageAlt, header, subheader, extraInfo }) => {
   return (
     <Card className={clsx("image-card bg-dark text-white text-center", className)}>
-      <Image className="image" fileName={imageFileName} alt={imageAlt || header || subheader} />
-      <Card.ImgOverlay className="no-padding">
+      <Image className='image' fileName={imageFileName} alt={imageAlt || header || subheader} />
+      <Card.ImgOverlay className='no-padding'>
         <Container>
-          <div className="intro-text">
-            <div className="intro-lead-in">{subheader}</div>
-            <div className="intro-heading text-uppercase">{header}</div>
+          <div className='intro-text'>
+            <div className='intro-lead-in'>{subheader}</div>
+            <div className='intro-heading'>{header}</div>
             {extraInfo}
           </div>
         </Container>

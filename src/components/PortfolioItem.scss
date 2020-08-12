@@ -14,7 +14,7 @@
       height: 100%;
       transition: all ease 0.5s;
       opacity: 0;
-      background: fade-out($primary, 0.3);
+      background: fade-out($secondary, 0.6);
       &:hover {
         opacity: 1;
       }
@@ -49,9 +49,8 @@
     }
     p {
       font-size: 16px;
-      font-style: italic;
       margin: 0;
-      @include serif-font;
+      @include body-font;
     }
   }
 }
