@@ -1,5 +1,5 @@
 ---
-anchor: "About"
+anchor: "Roadmap"
 header: "Roadmap"
 subheader: "Our plan is to revolutionize mental healthcare!"
 timeline:

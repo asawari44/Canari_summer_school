@@ -6,7 +6,7 @@ services: [
   {
     iconName: "ShoppingCartIcon",
     header: "Data collection",
-    content: "Our technology collects movement data from the accelerometer and location sensors of smartphones and smart wearables."
+    content: "Our technology collects movement data from the accelerometer and location sensors of smartphones."
   },
   {
     iconName: "LaptopIcon",

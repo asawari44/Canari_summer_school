@@ -1,7 +1,7 @@
 ---
 anchor: "Prototypes"
 header: "Our prototypes"
-subheader: "Here's what we came up with so far!"
+subheader: "Check out our initial design concepts"
 portfolios:
   [
     {
