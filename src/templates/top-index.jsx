@@ -33,10 +33,6 @@ export const query = graphql`
         frontmatter {
           brand
           anchor
-          clients {
-            href
-            imageFileName
-          }
           content
           copyright
           header
@@ -45,14 +41,6 @@ export const query = graphql`
           jumpToAnchor
           jumpToAnchorText
           menuText
-          portfolios {
-            content
-            extraInfo
-            header
-            subheader
-            imageFileNameDetail
-            imageFileName
-          }
           privacyHref
           privacyText
           services {
